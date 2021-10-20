@@ -1,0 +1,9 @@
+mixin masked-text-field(options)
+    -let inputClass = "masked-text-field_" + options.class
+    -let jsInputClass = "js-" + inputClass
+    input(
+        class=["masked-text-field",inputClass, jsInputClass]
+        type=options.type ? options.type : "text"
+    )
+
+

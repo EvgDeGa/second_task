@@ -1,0 +1,28 @@
+.masked-text-field{
+  width: 320px;
+  padding: 9px 15px;
+  border: 1px solid $darkShadeColor-25;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  font-family: $Font;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  color: $darkShadeColor-75;
+  outline: none;
+
+  &::placeholder {
+    color: $darkShadeColor-25;
+  }
+
+  &:hover,&:focus,&_focus {
+    border-color: $darkShadeColor-50;
+    &::placeholder {
+      line-height: 24px;
+      font-size: 14px;
+      color: $darkShadeColor-75;
+    }
+  }
+}
+

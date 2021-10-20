@@ -1,0 +1,10 @@
+mixin bullet-list(options)
+    div.bullet-list
+        div.bullet-list__description
+            p= options.description
+        div.bullet-list__items
+            each i in options.list
+                div.bullet-list__item
+                    div.item-pot
+                    p.item-description= i
+

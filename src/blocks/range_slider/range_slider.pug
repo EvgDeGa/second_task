@@ -1,0 +1,16 @@
+mixin range_slider(text, max)
+    - buf = "₽ - &#160; "
+    div.range-slider
+        div.range-slider__container
+            p.preview= text
+            div.price_container
+                p(id="first_price").first_price 0
+                p ₽ -&#160;
+                p(id="second_price").second_price= max
+                p ₽
+        div(id="slider").slider
+            div(id="range").range
+            div(id="thumb").thumb
+            div(id="thumb2").thumb2
+        div.anot
+            p.anot_text Стоимость за сутки пребывания в номере

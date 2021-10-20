@@ -1,0 +1,42 @@
+.bullet-list{
+  display: flex;
+  flex-direction: row;
+
+  .bullet-list__description{
+    font-family: $Font;
+    font-size: 12px;
+    line-height: 15px;
+    color: $darkShadeColor-75;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: auto;
+    padding-bottom: 3px;
+  }
+
+
+  .bullet-list__item{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+    .item-pot{
+      margin: 7px 0;
+      padding: 5px;
+      background: $darkShadeColor-25;
+      border-radius: 50%;
+    }
+
+    .item-description{
+      padding-left: 10px;
+
+      font-family: $Font;
+      font-size: 14px;
+      line-height: 24px;
+      color: $darkShadeColor-75;
+    }
+
+  }
+
+
+
+}

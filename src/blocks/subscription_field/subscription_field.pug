@@ -1,0 +1,14 @@
+mixin subscription-field(options)
+    -let inputClass = "subscription-field"
+    -inputClass += options.focus ? " subscription-field_focus" : ""
+    div(class=inputClass)
+        input(
+            class="subscription-field__input"
+            type=options.type ? options.type : "text"
+            placeholder=options.placeholder
+            value=options.value
+        )
+        img(
+            class="subscription-field__img"
+            src="../assets/img/arrow_forward_footer.svg"
+            )

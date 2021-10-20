@@ -1,0 +1,56 @@
+.toggle {
+  display: flex;
+  flex-direction: row;
+
+  .toggle_container {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+
+    font-family: $Font;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShadeColor-75;
+
+    input {
+      visibility: hidden;
+    }
+  }
+
+  .toggle_container__button {
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform:translate(0%, -50%);
+    padding: 3px;
+    background: #FFFFFF;
+    border: 1px solid $darkShadeColor-25;
+    border-radius: 10px;
+  }
+
+  .toggle_container input:checked ~ .toggle_container__button {
+    border: 1px solid $purpleColor;
+    background: white;
+  }
+
+  .toggle_container__button:after {
+    content: "";
+    margin-right: 20px;
+    display: none;
+  }
+
+  .toggle_container input:checked ~ .toggle_container__button:after {
+    display: block;
+    margin-right: 0;
+    margin-left: 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+
+  .toggle_container .toggle_container__button:after {
+    display: block;
+    padding: 6px;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+  }
+}

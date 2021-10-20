@@ -1,0 +1,19 @@
+mixin dropdown(options)
+    div.dropdown
+        div(class="dropdown-information")
+            p= options.placeholder
+            img(class="button-menu" src="./assets/img/expand_more.svg")
+        ul(class="dropdown-menu")
+            each i in options.items
+                li.dropdown-menu__item
+                    p.name= i
+                    div.counter
+                        div.counter-minus
+                            p -
+                        div.counter-number
+                            p 0
+                        div.counter-plus
+                            p +
+            li.dropdown-menu__buttons
+                p.reset-button Сбросить
+                p.accept-button Применить

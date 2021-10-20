@@ -1,0 +1,11 @@
+mixin text-field(options)
+    -let inputClass = "text-field"
+    -inputClass += options.focus ? " text-field_focus" : ""
+    input(
+        class=inputClass
+        type=options.type ? options.type : "text"
+        placeholder=options.placeholder
+        value=options.value
+    )
+
+

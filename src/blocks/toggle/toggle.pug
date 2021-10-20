@@ -1,0 +1,5 @@
+mixin toggle(option)
+    div.toggle
+        label.toggle_container= option.name
+            input(type="checkbox" name="checkbox" value="ok" checked=option.checked)
+            span.toggle_container__button

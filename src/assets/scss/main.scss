@@ -1,0 +1,16 @@
+//Common styles
+@import './fonts.scss';
+@import './vars.scss';
+@import "./common_styles";
+
+
+//Block styles
+@import '../../blocks/text_field/text_field.scss';
+@import '../../blocks/dropdown/dropdown.scss';
+@import '../../blocks/masked_text_field/masked_text_field.scss';
+@import '../../blocks/toggle/toggle.scss';
+@import '../../blocks/subscription_field/subscription_field.scss';
+@import '../../blocks/checkbox_list/checkbox_list.scss';
+@import '../../blocks/rich_checkbox_buttons/rich_checkbox_buttons.scss';
+@import '../../blocks/bullet_list/bullet_list.scss';
+@import '../../blocks/checkbox_buttons/checkbox_buttons.scss';

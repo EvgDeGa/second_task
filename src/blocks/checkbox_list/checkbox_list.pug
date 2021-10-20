@@ -1,0 +1,15 @@
+mixin checkbox-list(options)
+    -let checkboxListClass = "checkbox-list"
+    -checkboxListClass += options.open ? " checkbox-list_open" : ""
+    div(class=checkboxListClass)
+        div.checkbox-list__description
+            p= options.discription
+            img(
+                class="expand-more__img"
+                src="../assets/img/expand_more.svg")
+        div.checkbox-list__items
+            each i in options.list
+                label.checkbox-list__item
+                    p= i
+                    input(type="checkbox" name="check" placeholder=i)
+                    span.item__checkmark

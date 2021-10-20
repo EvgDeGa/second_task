@@ -1,0 +1,38 @@
+.subscription-field{
+  width: 267px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 8px 12px 10px 15px;
+  border: 1px solid $darkShadeColor-25;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  .subscription-field__input{
+    font-family: $Font;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    color: $darkShadeColor-75;
+    outline: none;
+
+    &::placeholder {
+      color: $darkShadeColor-25;
+    }
+
+    &:hover,&:focus,&_focus{
+      &::placeholder {
+        line-height: 24px;
+        font-size: 14px;
+        color: $darkShadeColor-75;
+      }
+    }
+  }
+
+  .subscription-field__img{
+    padding-top: 2px;
+  }
+
+}
+

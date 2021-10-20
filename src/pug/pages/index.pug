@@ -1,0 +1,40 @@
+//Pug blocks
+include ../../blocks/text_field/text_field.pug
+include ../../blocks/dropdown/dropdowm.pug
+include ../../blocks/masked_text_field/masked_text_field.pug
+include ../../blocks/toggle/toggle.pug
+include ../../blocks/subscription_field/subscription_field.pug
+include ../../blocks/checkbox_list/checkbox_list.pug
+include ../../blocks/rich_checkbox_buttons/rich_checkbox_buttons.pug
+include ../../blocks/bullet_list/bullet_list.pug
+include ../../blocks/checkbox_buttons/checkbox_buttons.pug
+
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Landing Page
+    body
+        +text-field({placeholder: "Email"})
+        +text-field({placeholder: "Email", focus: true, value: "This is pretty awesome"})
+        +dropdown({class: "guest", placeholder: "Сколько гостей", items: ["Взрослые", "Дети", "Младенцы"]})
+        +masked-text-field({class: "date"})
+        +toggle({name: "Получать спецпредложения", checked: true})
+        +subscription-field({placeholder: "Email"})
+        +checkbox-list({
+            open: false,
+            discription: "expandable checkbox list",
+            list: ["Завтрак", "Письменный стол", "Стул для кормления", "Кроватка", "Телевизор", "Шампунь", "Телевизор"]
+        })
+        +rich-checkbox-buttons({
+            open: true,
+            discription: "rich Checkbox Buttons",
+            list_h: ["Широкий коридор", "Помощник для инвалидов"],
+            list_ds: ["Ширина коридоров в номере не менее 91 см.", "На 1 этаже вас встретит специалист  и проводит до номера."]
+        })
+        +bullet-list({description: "bullet list",list: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00,\n" +
+            "        а выезд до 12:00"]})
+        //+checkbox-buttons({list: ["Можно курить", "Можно с питомцами", "Можно пригласить гостей (до 10 человек)"]})

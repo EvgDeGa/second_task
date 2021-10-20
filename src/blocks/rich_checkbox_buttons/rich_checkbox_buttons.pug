@@ -1,0 +1,12 @@
+mixin rich-checkbox-buttons(options)
+    div.rich-checkbox-buttons
+        div.rich-checkbox-buttons__description
+            p= options.discription
+        div.rich-checkbox-buttons__items
+            each i,j in options.list_h
+                label.rich-checkbox-buttons__item
+                    div
+                        p.item__heading= i
+                        p.item__description= options.list_ds[j]
+                    input(type="checkbox" name="check" placeholder=i)
+                    span.item__checkmark

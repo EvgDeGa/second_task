@@ -1,0 +1,7 @@
+mixin checkbox-buttons(options)
+    div.checkbox-buttons
+        each i in options.list
+            label.checkbox-buttons__item
+                p= i
+                input(type="checkbox" name="check" placeholder=i)
+                span.item__checkmark
